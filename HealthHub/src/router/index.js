@@ -3,15 +3,11 @@ import HomeView from '../views/HomeView.vue' //
 import AboutView from '../views/AboutView.vue' //
 import ContactsView from '../views/ContactsView.vue' //
 import LoginView from '../views/LoginView.vue' //
-import EyeServiceView from '../views/EyeServiceView.vue' //
-import EnServiceView from '../views/EnServiceView.vue' //
 import AppointmentView from '../views/AppointmentView.vue' //
-import ConsultationView from '../views/ConsultationView.vue' //
 // import RegisterView from '../views/RegisterView.vue'
 import DashboardHome from '../views/Dashboard/DashboardHome.vue'
 import DashboardPatients from '../views/Dashboard/DashboardPatients.vue'
-import DashboardDoctors from '../views/Dashboard/DashboardDoctors.vue'
-import DashboardMedicines from '../views/Dashboard/DashboardMedicines.vue'
+import DashboardAppointments from '../views/Dashboard/DashboardAppointments.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,24 +33,9 @@ const router = createRouter({
       component: LoginView
     },
     {
-      path: '/eyeservice',
-      name: 'eyeService',
-      component: EyeServiceView
-    },
-    {
-      path: '/enservice',
-      name: 'enService',
-      component: EnServiceView
-    },
-    {
       path: '/appointment',
       name: 'appointment',
       component: AppointmentView
-    },
-    {
-      path: '/consultation',
-      name: 'consultation',
-      component: ConsultationView
     },
     {
       path: '/dashboard',
@@ -67,14 +48,9 @@ const router = createRouter({
       component: DashboardPatients
     },
     {
-      path: '/doctors',
-      name: 'doctors',
-      component: DashboardDoctors
-    },
-    {
-      path: '/medicines',
-      name: 'medicines',
-      component: DashboardMedicines
+      path: '/appointments',
+      name: 'appointments',
+      component: DashboardAppointments
     },
     // {
     //   path: '/register',

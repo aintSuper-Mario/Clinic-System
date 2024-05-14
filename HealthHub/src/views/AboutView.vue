@@ -1,4 +1,14 @@
+<script>
+import Navbar from '../components/Navbar.vue'
+export default {
+  setup() {
+    
+  },
+  components: {Navbar}
+}
+</script>
 <template>
+  <Navbar />
   <div class="about-us-container">
     <div class="aboutus">
       <h1>ABOUT US</h1>

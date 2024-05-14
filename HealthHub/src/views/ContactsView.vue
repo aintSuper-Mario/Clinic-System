@@ -1,7 +1,14 @@
 <script>
-export default {};
+import Navbar from '../components/Navbar.vue'
+export default {
+  setup() {
+    
+  },
+  components: {Navbar}
+}
 </script>
 <template>
+  <Navbar />
   <div class="contacts-container">
     <h1>Get in Touch</h1>
     <div class="contacts">

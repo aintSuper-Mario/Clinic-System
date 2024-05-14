@@ -12,7 +12,6 @@ export default {
             <h3 class="logo">
               <router-link :to="{name: 'home'}">HealthHub</router-link>
             </h3>
-            <input type="search" class="search"  placeholder="Search..."/>
         </div>
         
         <ul>
@@ -29,7 +28,7 @@ export default {
     nav {
         background-color: #0146ae;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-        padding: 13px;
+        padding: 12px;
         display: flex;
         justify-content: space-between;
     }
@@ -57,7 +56,7 @@ export default {
     }
 
     li {
-        font-size: .9em;
+        font-size: 1em;
         margin: auto 0;
         font-weight: 600;
         margin-right: 30px;
@@ -83,24 +82,6 @@ export default {
     }
     .flex {
         display: flex;
-    }
-    .search {
-        background-color: whitesmoke;
-        color: rgb(36, 35, 35);
-        border-radius: 5px;
-        width: 400px;
-        margin: auto 80px;
-        padding: 7px 10px;
-        opacity: 50%;
-        border: 2px solid white;
-    }
-    .search:focus {
-        outline: none;
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
-    }
-    .search::placeholder {
-        letter-spacing: 1px;
     }
     .router-link-exact-active {
         font-weight: 1000;

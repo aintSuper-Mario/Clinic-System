@@ -1,5 +1,6 @@
 <template>
   <main>
+    <Navbar />
     <Main />
     <Services />
     <Footer />
@@ -10,9 +11,10 @@
 import Main from '../components/Main.vue'
 import Services from '../components/Services.vue'
 import Footer from '../components/Footer.vue'
+import Navbar from '../components/Navbar.vue'
 export default {
   components: {
-    Main, Services, Footer
+    Main, Services, Footer, Navbar,
   }
 }
 </script>

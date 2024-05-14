@@ -6,10 +6,9 @@
       <ul>
         <li><router-link :to="{ name: 'dashboard' }">Home</router-link></li>
         <li><router-link :to="{ name: 'patients' }">Patients</router-link></li>
-        <li><router-link :to="{ name: 'doctors' }">Doctors</router-link></li>
-        <li>Medicines</li>
+        <li><router-link :to="{ name: 'appointments' }">Appointments</router-link></li>
         <hr>
-        <li class="logout">Logout</li>
+        <li class="logout"><router-link  :to="{ name: 'home' }">Logout</router-link></li>
       </ul>
     </div>
 
@@ -129,7 +128,7 @@
 </template>
 <style scoped>
 #grid {
-  background: #d4d4d4;
+  background: rgba(255,255,255,0.1);
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-auto-rows: minmax(100px, auto);
@@ -178,19 +177,17 @@ a {
   text-decoration: none;
   color: white;
 }
-
-#grid .side-nav ul li a .router-link-exact-active {
+.router-link-exact-active {
   font-weight: 800;
   text-decoration: underline;
 }
 
 #grid .side-nav ul .logout {
-  margin-left: 25px;
-  margin-top: 500px;
+  margin-left: 20px;
+  margin-top: 50px;
   font-weight: 700;
-  background: white;
+  background: #003a6b;
   width: fit-content;
-  color: #0146ae;
   padding: 5px;
   border-radius: 6px;
 }
@@ -206,7 +203,8 @@ a {
   margin: 50px 10px 10px 0;
   grid-row: 1 / 6;
   grid-column: 9 / 11;
-  background: #98bddf;
+  background-color: rgba(44, 130, 201, 0.4);
+  border: 1px solid lightgray;
 }
 .earnings h5 {
   color: white;
@@ -384,7 +382,8 @@ a {
   text-align: center;
   color: white;
   margin: 0 10px 20px 0;
-  background: #98bddf;
+  background-color: rgba(44, 130, 201, 0.4);
+  border: 1px solid lightgray;
   grid-column: 9 / 11;
   grid-row: 6 / 8;
   border-radius: 10px;
@@ -430,7 +429,19 @@ a {
   margin-top: 30px;
   font-weight: 400;
   text-align: center;
-  border: 1px solid #0146ae;
+  border: 1px solid lightgray;
+}
+
+.duty p:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+#grid .header div h1 {
+  font-weight: 700;
+}
+#grid .header div {
+  margin-left: 20px;
 }
 
 
